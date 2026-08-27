@@ -1,0 +1,36 @@
+/* 《版次》Design Tokens —— 纸、墨、朱砂三色纪律，无一硬编码 */
+
+:root {
+  /* 色彩 */
+  --paper: #efe8d8; /* 案头纸 */
+  --paper-sheet: #f7f2e4; /* 版纸（canvas 内同色） */
+  --paper-veil: rgba(239, 232, 216, 0.82); /* 文字衬底 */
+  --ink: #26221c; /* 铁墨 */
+  --ink-2: #57503f; /* 次级文字，对比 ≥ 5.5:1 */
+  --ink-3: #847b67; /* 眉注（仅限大字/装饰） */
+  --hairline: rgba(38, 34, 28, 0.16);
+  --vermilion: #b23427; /* 朱砂 */
+  --vermilion-deep: #8e2a1f; /* 朱砂（小字可读版） */
+
+  /* 字体 */
+  --font-serif: 'Noto Serif SC', 'Songti SC', 'STSong', 'STSongti-SC', SimSun, serif;
+  --font-latin: 'EB Garamond', Georgia, 'Times New Roman', serif;
+
+  /* 字号 */
+  --fs-hero: clamp(96px, 20vmin, 230px);
+  --fs-h2: clamp(30px, 4.4vw, 54px);
+  --fs-body: clamp(16px, 1.35vw, 19px);
+  --fs-small: 13px;
+  --fs-tiny: 11px;
+
+  /* 间距（4px 基数） */
+  --gutter: clamp(20px, 5vw, 76px);
+  --gap-section: clamp(96px, 18vh, 200px);
+
+  /* 动效曲线 */
+  --ease-ink: cubic-bezier(0.25, 0.8, 0.25, 1);
+  --ease-press: cubic-bezier(0.3, 1.6, 0.4, 1);
+
+  /* 由引擎每帧写入的滚动进度 */
+  --sp: 0;
+}
